@@ -3,12 +3,12 @@ module.exports = function (app) {
   app.use(
     '/home',
     createProxyMiddleware({
-      target: 'https://home-api.pinduoduo.com/',
+      target: 'https://home-api.###.com/',
       changeOrigin: true,
     }),
   )
 
-  // http://api.bdplus.cn/api/userinfo?page=1&pageSize=100
+  // http://api.###.cn/api/userinfo?page=1&pageSize=100
   //   app.use(
   //     '/wp-json',
   //     createProxyMiddleware({
